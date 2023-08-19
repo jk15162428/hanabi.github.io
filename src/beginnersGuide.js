@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { CircularProgressbar } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
-import { mainSidebar } from "../sidebars";
+import "react-circular-progressbar/dist/styles.css"; // eslint-disable-line import/no-unassigned-import
+import { mainSidebar } from "../sidebars.js";
 
 const beginnersGuidePartsRaw = mainSidebar.find(
   (item) => item["Beginner's Guide"]
@@ -24,7 +24,7 @@ function parseSidebar(acc, partsRaw) {
 const TOTAL_PARTS = parts.length;
 
 export default function Progress({ id }) {
-  const part = parts.findIndex((id2) => `beginner/${id}` === id2);
+  const part = parts.indexOf(`beginner/${id}`);
   if (part === -1) {
     throw new Error("page id not found in sidebar");
   }

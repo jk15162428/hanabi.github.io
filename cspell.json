@@ -1,21 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
-  "files": [
-    "**"
-  ],
-  "enableFiletypes": [
-    "*"
-  ],
+  "files": ["**"],
+  "enableFiletypes": ["*"],
   "enableGlobDot": true,
-  "ignorePaths": [
-    "*.svg",
-    ".docusaurus/**",
-    ".git/**",
-    "build/**",
-    "dist/**",
-    "LICENSE"
-  ],
+  "useGitignore": true,
+  "ignorePaths": ["*.svg", ".git/**", ".yarn/**", "LICENSE"],
   "words": [
     "ahming",
     "albertine",
@@ -35,6 +25,7 @@
     "cluer",
     "cocktailgames",
     "codenames",
+    "corepack",
     "crossorigin",
     "darkgreen",
     "darkred",
@@ -84,8 +75,6 @@
     "metagame",
     "micerang",
     "misranked",
-    "noopener",
-    "noreferrer",
     "occams",
     "offsetblur",
     "omni",
@@ -95,12 +84,10 @@
     "PPCL",
     "progressbar",
     "promptable",
-    "pylint",
     "pyrotechnicians",
     "rainbowtext",
     "ralenti",
     "razvogor",
-    "remarkrc",
     "retext",
     "rnrgames",
     "romain",
